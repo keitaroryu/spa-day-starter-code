@@ -26,8 +26,6 @@ table {
 }
 
 footer {
-    vertical-align: center;
-    padding: auto;
     display: flex;
     justify-content: center;
 }
