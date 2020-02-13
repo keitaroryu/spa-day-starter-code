@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8"/>
+    <title></title>
+</head>
+<body>
+    <h3>User Profile Successfully Created!</h3>
+    <a href="/">Return to Service Selection</a>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Users</th>
+            </tr>
+        </thead>
+            <tr th:each="user : ${users}">
+                <td th:text="${user.username}"></td>
+                <td><a th:href="@{/user/detail/{id}(id=${user.id})}">Details</a></td>
+            </tr>
+    </table>
+</body>
+</html>
